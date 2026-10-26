@@ -1,0 +1,150 @@
+/* Styling Utama Tugas 2 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+    margin: 0;
+    padding: 30px;
+}
+
+.form-container {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    text-align: center;
+    color: #2b6cb0;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.form-desc {
+    text-align: center;
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Header Table Styling */
+.section-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.section-table th {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section-table tr {
+    border-bottom: 1px solid #edf2f7;
+}
+
+.section-table tr:last-child {
+    border-bottom: none;
+}
+
+.section-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.label-col {
+    width: 32%;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.top-align {
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+/* Controls Styling */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #3182ce;
+    outline: none;
+    box-shadow: 0 0 4px rgba(49, 130, 206, 0.25);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radio & Checkbox Alignments */
+.inline-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.vertical-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    color: #2d3748;
+}
+
+.custom-option input[type="radio"],
+.custom-option input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+    accent-color: #3182ce;
+}
+
+/* Submit Button */
+.center-btn {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.submit-btn {
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2b6cb0;
+}

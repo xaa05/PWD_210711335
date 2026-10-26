@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Workshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulir Pendaftaran Workshop</h1>
+        <p class="form-desc">Lengkapi formulir pendaftaran di bawah ini untuk mengikuti workshop.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <!-- Section 1: Data Peserta -->
+            <table class="section-table">
+                <tr>
+                    <th colspan="2">Data Peserta</th>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="nama">Nama Lengkap</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda..." /></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="nim">NIM</label></td>
+                    <td><input type="text" id="nim" name="nim" placeholder="Masukkan NIM Anda..." /></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Jenis Kelamin</td>
+                    <td>
+                        <div class="inline-group">
+                            <label class="custom-option"><input type="radio" id="laki" name="jk" value="Laki-laki" /> Laki-laki</label>
+                            <label class="custom-option"><input type="radio" id="perempuan" name="jk" value="Perempuan" /> Perempuan</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="prodi">Program Studi</label></td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Section 2: Pilihan Workshop -->
+            <table class="section-table">
+                <tr>
+                    <th colspan="2">Pilihan Workshop</th>
+                </tr>
+                <tr>
+                    <td class="label-col">Jenis Peserta</td>
+                    <td>
+                        <div class="inline-group">
+                            <label class="custom-option"><input type="radio" id="mahasiswa" name="jenis_peserta" value="Mahasiswa" /> Mahasiswa</label>
+                            <label class="custom-option"><input type="radio" id="umum" name="jenis_peserta" value="Umum" /> Umum</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col top-align">Materi Workshop</td>
+                    <td>
+                        <div class="vertical-group">
+                            <label class="custom-option"><input type="checkbox" id="uiux" name="materi" value="UI/UX Design" /> UI/UX Design</label>
+                            <label class="custom-option"><input type="checkbox" id="webdev" name="materi" value="Web Development" /> Web Development</label>
+                            <label class="custom-option"><input type="checkbox" id="data" name="materi" value="Data Analysis" /> Data Analysis</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Section 3: Informasi Tambahan -->
+            <table class="section-table">
+                <tr>
+                    <th colspan="2">Informasi Tambahan</th>
+                </tr>
+                <tr>
+                    <td class="label-col top-align"><label for="alasan">Alasan Mengikuti Workshop</label></td>
+                    <td>
+                        <textarea id="alasan" name="alasan" rows="5" placeholder="Tuliskan alasan Anda..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col">Jenis Pembayaran</td>
+                    <td>
+                        <div class="inline-group">
+                            <label class="custom-option"><input type="radio" id="qris" name="pembayaran" value="QRIS" /> QRIS</label>
+                            <label class="custom-option"><input type="radio" id="tf" name="pembayaran" value="Transfer Bank" /> Transfer Bank</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="bukti">Bukti Pembayaran</label></td>
+                    <td>
+                        <input type="file" id="bukti" name="bukti" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center-btn">
+                        <input type="submit" name="daftar" value="Daftar" class="submit-btn" />
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>
